@@ -258,11 +258,32 @@
         .news a:first-child{
             float:left;
             width:165px;
+            white-space:nowrap;
+            overflow:hidden;
+            text-overflow:ellipsis
         }
         .news a:last-child{
             float:right;
         }
-        
+        .quick-icons li{
+            float:left;
+            width:33.333333333%;
+        }
+        .quick-icons a{
+            display:grid;
+            grid-template-rows:40px auto;
+
+        }
+        .quick-icons a .img-box{
+            width:50%;
+            justify-self:center;
+
+        }
+        .quick-icons a p{
+            font-size:13px;
+            text-align:center;
+        }
+
 
     </style>
 </head>
@@ -448,7 +469,7 @@
                         <p><a href="#"><i class="fas fa-play-circle"> 바로가기</i></a></p>
                     </article>
                     <article class="art news">
-                        <h3><i class="fas fa-volume-up"></i> News</a><i class="fas fa-play-circle"></i></h3>
+                        <h3><i class="fas fa-volume-up"></i> News</h3>
                         <ul>
                             <li class="clearfix">
                                 <a href="#">개인정보처리방침 변경 안내</a>
@@ -466,7 +487,7 @@
                     </article>
                     <article class="art quick-icons">
                         <h3 class="hidden-tit">창업안내, 아카데미강좌, 고객문의 바로가기</h3>
-                        <ul>
+                        <ul class="clearfix">
                             <li>
                                 <a href="#">
                                     <div class="img-box">
