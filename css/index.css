@@ -1,4 +1,4 @@
-@charset 'utf-8'
+@charset 'utf-8';
 
 /* slider style */
 .main-slider .container{
@@ -16,7 +16,8 @@
     background-color: #fff;
 }
 .bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:hover{
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a:focus{
     background-color:#ba000c;
 }
 
